@@ -11,7 +11,12 @@ public class NumerosAleatorios {
         // Numero aleatorio entre 1 y 10
         numeroAleatorio = random.nextInt(10) + 1;
         System.out.println("Numero aleatorio entre 1 y 10 = "+numeroAleatorio);
-        /
+        //Numeros flotantes
+        var flotantes = random.nextFloat();
+        System.out.println("Fotante aleatorio= "+flotantes);
+        //Simulador de dado
+        var dado = random.nextInt(6)+1;
+        System.out.println("EL valor del dado es = "+ dado);
 
     }
 
