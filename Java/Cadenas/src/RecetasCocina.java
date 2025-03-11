@@ -6,7 +6,7 @@ public class RecetasCocina {
     public static void main(String[] args) {
 
         System.out.println("***** \tPrograma de recetas de cocina *****");
-        var consola= new Scanner(System.in);
+         var consola= new Scanner(System.in);
         //Ingresa tu receta de cocina
         System.out.print("ingresa tu reseta de cocina ");
         var nombreReceta = consola.nextLine();
