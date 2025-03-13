@@ -13,7 +13,7 @@ public class GeneradorId {
         var nombre = cadena.nextLine();
         System.out.print("Ingresa tu apellido: ");
         var apellido = cadena.nextLine();
-        System.out.println("Introduce tu año de nacimiento(AAAA): ");
+        System.out.print("Introduce tu año de nacimiento(AAAA): ");
         var fechaNacimiento = cadena.nextLine();
 
         //normalizamos los datos
