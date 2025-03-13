@@ -9,6 +9,18 @@ public class FormateodeCadenas {
         var mensaje = String.format("Nombre: %s, Edad: %d, Salario $%.2f",nombre, edad
                 , salario);
         System.out.println(mensaje);
+        var numeroEmpleado= 132;
+        //Formateo utilisando texy Block  "\s-> agrega un espacio entre texto en un bloque de texto
+        mensaje = """
+                %nDetalle de la persona:\s
+                ---------------------------------
+                \tNombre: %s
+                \tNumero de Empleado: %05d
+                \tEdad: %d
+                \tsalario: %.2f
+                ---------------------------------
+                """.formatted(nombre,numeroEmpleado,edad,salario);
+        System.out.println(mensaje);
 
     }
 }
