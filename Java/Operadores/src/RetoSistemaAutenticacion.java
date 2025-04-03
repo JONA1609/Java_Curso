@@ -4,15 +4,15 @@ import java.util.SortedMap;
 public class RetoSistemaAutenticacion {
 
     public static void main(String[] args) {
-        System.out.println("*****  Sistema de autenticacion de usuarios  *****");
+        System.out.println("*****  Sistema de Autenticacion de usuarios  *****");
         final String usuario= "alberto03";
         final String contrasenia= "nomelase";
         var consola = new Scanner(System.in);
 
         //Solicitamos usuario y contraseña
-        System.out.println("Ingresa el usuario: ");
+        System.out.print("Ingresa el usuario: ");
         var usuario2 = consola.nextLine();
-        System.out.println("Ingresa la contraseña: ");
+        System.out.print("Ingresa la contraseña: ");
         var contrasenia2 = consola.nextLine();
 
         //Comparamos las cadenas solicitadas
@@ -21,11 +21,7 @@ public class RetoSistemaAutenticacion {
                 contrasenia.equals(contrasenia2);
 
         //imprimimos el resultado
-        System.out.println("El accerso al sistema es: "+usuarioCorrecto);
-
-
-
-
+        System.out.print("El accerso al sistema es: "+usuarioCorrecto);
 
     }
 
