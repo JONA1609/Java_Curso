@@ -21,7 +21,7 @@ public class RetoSistemaAutenticacion {
                 contrasenia.equals(contrasenia2);
 
         //imprimimos el resultado
-        System.out.println("Eol accerso al sistema es: "+usuarioCorrecto);
+        System.out.println("El accerso al sistema es: "+usuarioCorrecto);
 
 
 
