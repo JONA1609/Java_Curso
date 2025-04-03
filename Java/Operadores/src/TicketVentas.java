@@ -34,13 +34,15 @@ public class TicketVentas {
         var impuestos= subTotal * 0.16;
 
         //Calculo total con impuestos
-        var costoTotal= subTotal + impuestos;
+        var costoTotal= subtotalConDescuento + impuestos;
 
         //Imprimir ticket
         System.out.printf("""
                 Subtotal:$%.2f
+                Descuento:$%.2f (%d%%)
                 Impuesto (16%%):$%.2f
                 Costo Total: $%.2f
-                """, subTotal, impuestos, costoTotal);
+                """, subtotalConDescuento,descuento,
+                impuestos, costoTotal);
     }
 }
