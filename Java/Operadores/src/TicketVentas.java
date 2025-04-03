@@ -22,7 +22,7 @@ public class TicketVentas {
         var descuentoPorcentaje = Integer.parseInt(consola.nextLine());
 
         //Calculo del subtotal sin impuestos
-        var subTotal= precioLeche + precioPan + precioHuevo + precioHuevo + precioManzanas;
+        var subTotal= precioLeche + precioPan + precioHuevo + precioManzanas;
 
         //calcular descuento
         var descuento = subTotal *(descuentoPorcentaje/100.0);
@@ -31,7 +31,7 @@ public class TicketVentas {
         var subtotalConDescuento= subTotal-descuento;
 
         //Calculo iva o impuesto
-        var impuestos= subTotal * 0.16;
+        var impuestos= subtotalConDescuento * 0.16;
 
         //Calculo total con impuestos
         var costoTotal= subtotalConDescuento + impuestos;
@@ -43,6 +43,6 @@ public class TicketVentas {
                 Impuesto (16%%):$%.2f
                 Costo Total: $%.2f
                 """, subtotalConDescuento,descuento,
-                impuestos, costoTotal);
+                descuentoPorcentaje,impuestos, costoTotal);
     }
 }
