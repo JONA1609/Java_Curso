@@ -15,7 +15,7 @@ public class ValorPositivo {
         }else  if (numero < 0 ){
             System.out.println("El numero es negativo "+numero);
         }else {
-            System.out.println("Es negativo "+numero);
+            System.out.println("Es cero "+numero);
         }
 
 
