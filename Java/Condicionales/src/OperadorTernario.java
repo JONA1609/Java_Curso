@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class OperadorTernario {
     public static void main(String[] args) {
 
@@ -7,9 +9,10 @@ public class OperadorTernario {
         //Condicion ? expe1 : exp2
 
         //Determinar si un numero es par o no
-        var numero = 4;
-        var resultado = (numero%2 == 0)? "Par": "Impar";
-        System.out.println("El numero "+numero+ "es "+ resultado);
+        var numero = new Random();
+
+        var resultado = (numero.nextInt(100)%2 == 0)? "Par": "Impar";
+        System.out.println("El numero "+numero+ " es "+ resultado);
 
     }
 }
