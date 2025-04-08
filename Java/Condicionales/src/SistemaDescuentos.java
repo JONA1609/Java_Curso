@@ -7,7 +7,6 @@ public class SistemaDescuentos {
 
         var consola = new Scanner(System.in);
 
-
         System.out.print("Proporciona el monto de tu compra; ");
         var montoCompra = Integer.parseInt(consola.nextLine());
         System.out.print("¿Tienes mambresia de la tienda (true/false)? ");
@@ -32,14 +31,5 @@ public class SistemaDescuentos {
         }else {
             System.out.println("tu descuento es del 0%");
         }
-
-
-
-
     }
-
-
-
-
-
 }
