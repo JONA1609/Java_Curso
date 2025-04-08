@@ -5,7 +5,7 @@ public class CasaDeLosEspejos {
         System.out.println("Bienvenidos a la casa de los espejos");
         var consola = new Scanner(System.in);
 
-        System.out.println("Cual es tu edad? ");
+        System.out.print("Cual es tu edad? ");
         var edad = Integer.parseInt(consola.nextLine());
 
         System.out.print("Tienes miedo a la oscuridad(true/false)? ");
@@ -14,11 +14,8 @@ public class CasaDeLosEspejos {
         if (!tienesMiedo&&edad>=10){
             System.out.println("puedes entrar a la casa de los espejos");
         }else {
-            System.out.println("lo siento la cas de los epejos puede darte miedo");
+            System.out.println("lo siento la casa de los epejos puede darte miedo");
         }
-
-
-
 
     }
 }
