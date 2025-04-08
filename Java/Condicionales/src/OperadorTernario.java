@@ -10,9 +10,10 @@ public class OperadorTernario {
 
         //Determinar si un numero es par o no
         var numero = new Random();
+        var numero1= numero.nextInt(100);
 
-        var resultado = (numero.nextInt(100)%2 == 0)? "Par": "Impar";
-        System.out.println("El numero "+numero+ " es "+ resultado);
+        var resultado = (numero1%2 == 0)? "Par": "Impar";
+        System.out.println("El numero "+numero1+ " es "+ resultado);
 
     }
 }
