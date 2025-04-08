@@ -16,19 +16,28 @@ public class SistemaDescuentos {
         //mienbro de la tienda
         var descuento= 0.0;
         if (montoCompra>=MONTO_MINIMO && membrecia){
-            System.out.println("Tienes un desscuento del 10%");
-             descuento = montoCompra*0.1;
-            System.out.println("Cantidad a descontar: "+ descuento);
-            var totalFinal = montoCompra - descuento;
-            System.out.println("Total de compra: "+totalFinal );
+             descuento =0.1;
         }else if (membrecia && montoCompra<MONTO_MINIMO) {
-            System.out.println("Tienes un descuento del 5%");
              descuento = montoCompra * 0.05;
-            System.out.println("Cantida a descontar"+ descuento);
-            var totalFinal = montoCompra - descuento;
-            System.out.println("El total con descuento es: "+ totalFinal);
         }else {
-            System.out.println("tu descuento es del 0%");
+           descuento= 0;
         }
+
+        if(descuento!=0) {
+           var descuuentoCompra = montoCompra*descuento;
+           var totalCompra = descuuentoCompra+montoCompra;
+            System.out.printf("""
+                    **** Felicidas tienes un descuento ****
+                      Descuento de : %.0f
+                      Total a pagar: %2f
+                    """,descuento, totalCompra);
+        }else {
+            System.out.printf("""
+                    **** Te invitamos a obtener tu membresia ****
+                        Descuento:---------------------- %f
+                        Total a pagar:------------------ %2f
+                    """,descuento, montoCompra);
+        }
+
     }
 }
