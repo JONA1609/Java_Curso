@@ -15,11 +15,10 @@ public class OperadorTernario {
         var resultado = (numero1%2 == 0)? "Par": "Impar";
         System.out.println("El numero "+numero1+ " es "+ resultado);
 
-        var edad = random.nextInt(18);
-        resultado= (edad>12)?"eres un adolecente": "Eres un niño";
-        System.out.println(resultado+" porque tu edad es de "+edad+ " Años");
-
         //Operador ternario anidado
+        var edad = random.nextInt(18);
+        resultado= (edad==18)?"eres mayor de edad": (edad>12)?"Eres un adolecente":"Eres un niño";
+        System.out.println(resultado+" porque tu edad es de "+edad+ " Años");
 
         resultado = (numero1 >0)? "positivo": (numero1<0)? "negativo": "Cero";
         System.out.println("El numero "+numero1+" es "+resultado);
