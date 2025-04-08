@@ -8,7 +8,7 @@ public class SistemaDescuentos {
         var consola = new Scanner(System.in);
 
         System.out.print("Proporciona el monto de tu compra; ");
-        var montoCompra = Integer.parseInt(consola.nextLine());
+        var montoCompra = Double.parseDouble(consola.nextLine());
         System.out.print("¿Tienes mambresia de la tienda (true/false)? ");
         var membrecia = Boolean.parseBoolean(consola.nextLine());
 
