@@ -22,7 +22,7 @@ public class SistemaDescuentos {
         }else {
            descuento= 0;
         }
-
+        // Calculamos los
         if(descuento!=0) {
            var descuuentoCompra = montoCompra * descuento;
            var totalCompra =  montoCompra - descuuentoCompra;
@@ -34,13 +34,12 @@ public class SistemaDescuentos {
         }else {
             System.out.printf("""
                     %n**** Te invitamos a obtener tu membresia ****
-                        Descuento:---------------------- %f
-                        Total a pagar:------------------ %.2f
+                        Descuento:---------------------- $%f
+                        Total a pagar:------------------ $%.2f
                     -----------------------------------------------
                     *****¿Que esperas?, Obten tu MEMBRECIA!!!!*****
                     
                     """,descuento, montoCompra);
         }
-
     }
 }
