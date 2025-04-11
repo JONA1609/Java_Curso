@@ -28,10 +28,10 @@ public class SaludYFitness {
                 %nUsuario:---------%s
                 Pasos dados hoy------%d
                 Calorias quemadas: %.2f
-                Meta de pasos diarios alcanzada: %d
+                Meta de pasos diarios alcanzada: %s
                 ------------------------------------
                 La meta de pasos diarios es de: %d pasos
-                """,nombreUsuario,pasosDiarios,caloriasQuemadas,
+                """,nombreUsuario,pasosDiarios,caloriasQuemadas,metaAlcanzada,
                 META_PASO_DIARIO);
 
 
