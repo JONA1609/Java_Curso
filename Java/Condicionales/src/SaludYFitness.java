@@ -9,13 +9,13 @@ public class SaludYFitness {
         final var META_PASO_DIARIO = 10000;
         final var CALORIA_POR_PASO = 0.04; //valor aproximado. son kilocalorias
 
-        var consoña = new Scanner(System.in);
+        var consola = new Scanner(System.in);
 
-        System.out.println("¿Cual es tu nombre?");
-        var nombreUsuario = consoña.nextLine();
+        System.out.print("¿Cual es tu nombre?");
+        var nombreUsuario = consola.nextLine();
 
-        System.out.println("¿Cuantos pasos has dado?");
-        var pasosDiarios = Integer.parseInt(consoña.nextLine());
+        System.out.print("¿Cuantos pasos has dado?");
+        var pasosDiarios = Integer.parseInt(consola.nextLine());
 
         //verificar si el usuario alcanzo la meta de pasos diarios
         var metaAlcanzada = (pasosDiarios>= META_PASO_DIARIO)?"Si :)" : "No :(";
