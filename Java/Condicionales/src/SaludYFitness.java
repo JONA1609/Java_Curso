@@ -11,10 +11,10 @@ public class SaludYFitness {
 
         var consola = new Scanner(System.in);
 
-        System.out.print("¿Cual es tu nombre?");
+        System.out.print("¿Cual es tu nombre?: ");
         var nombreUsuario = consola.nextLine();
 
-        System.out.print("¿Cuantos pasos has dado?");
+        System.out.print("¿Cuantos pasos has dado?: ");
         var pasosDiarios = Integer.parseInt(consola.nextLine());
 
         //verificar si el usuario alcanzo la meta de pasos diarios
