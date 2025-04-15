@@ -13,11 +13,5 @@ public class NumeroMayor {
         var resultado = (numero1>numero2)?numero1:numero2;
 
         System.out.println("El numero "+resultado+" es mayor");
-
-
-
-
-
-
     }
 }
