@@ -33,11 +33,5 @@ public class SaludYFitness {
                 La meta de pasos diarios es de: %d pasos
                 """,nombreUsuario,pasosDiarios,caloriasQuemadas,metaAlcanzada,
                 META_PASO_DIARIO);
-
-
-
-
-
-
     }
 }
