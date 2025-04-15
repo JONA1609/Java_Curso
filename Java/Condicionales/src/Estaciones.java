@@ -7,17 +7,20 @@ public class Estaciones {
 
         System.out.print("Proporciona un mes del año: ");
         var mes = Integer.parseInt(consola.nextLine());
-        
+        var estacion="";
+
         if (mes==1|| mes==2 || mes==12){
-            System.out.println("La estacion del año segun el mes es Invierno :)");
+           estacion= "Invierno :)";
         } else if (mes==3||mes==4||mes==5) {
-            System.out.println("La estacion del año segun el mes es Primavera :)");
+            estacion= "Primavera :)";
         } else if (mes==6||mes==7||mes==8) {
-            System.out.println("La estacion del año segun el mes es Verano :)");
+            estacion= "Verano :)";
         }else if (mes==9||mes==10||mes==11) {
-            System.out.println("La estacion del año segun el mes es Otoño :)");
+            estacion= "Otoño :)";
         }else{
-            System.out.println("El mes que ingresaste no existe, vuelve a intentar");
+            estacion= "El mes que ingresaste no existe :( :";
         }
+        System.out.println("La estacion del año a la que corresponde el mes "+mes+" es "+estacion);
+
     }
 }
