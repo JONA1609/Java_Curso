@@ -7,7 +7,7 @@ public class NumeroMayor {
 
         System.out.print("Proporciona el primer numero entero: ");
         var numero1 = Integer.parseInt(consola.nextLine());
-        System.out.printf("Proporciona el segundo numero entero: ");
+        System.out.print("Proporciona el segundo numero entero: ");
         var numero2 = Integer.parseInt(consola.nextLine());
 
         var resultado = (numero1>numero2)?numero1:numero2;
