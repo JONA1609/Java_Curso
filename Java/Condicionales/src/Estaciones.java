@@ -19,7 +19,5 @@ public class Estaciones {
         }else{
             System.out.println("El mes que ingresaste no existe, vuelve a intentar");
         }
-
     }
-
 }
